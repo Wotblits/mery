@@ -1,0 +1,171 @@
+:root {
+  --green: #24d024;
+  --yellow: #fff952;
+  --pink: #f53896;
+  --red: #fb4545;
+  --blue: #0a53de;
+  --orange: #ff821c;
+  --light-blue: #00d9ff;
+}
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+body {
+  margin: 0px;
+  background-color: grey;
+}
+ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  position: relative;
+  width: 12px;
+  height: 28px;
+  background: #ffffff;
+  border-radius: 50%;
+  list-style-type: none;
+
+  margin-right: 42px;
+}
+ul li::before {
+  content: "";
+
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+
+  background-color: black;
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ul li:not(:last-child):after {
+  content: "";
+  top: -14px;
+  left: 9px;
+  position: absolute;
+  width: 52px;
+  height: 19px;
+  border-bottom: solid #222 2px;
+  border-radius: 30%;
+}
+.red {
+  background-color: var(--red);
+  animation: lightnigRed 2s infinite;
+}
+.green {
+  background-color: var(--green);
+  animation: lightnigGreen 2.6s infinite;
+}
+.yellow {
+  background-color: var(--yellow);
+  animation: lightnigYellow 2.3s infinite;
+}
+.pink {
+  background-color: var(--pink);
+  animation: lightnigPink 2.1s infinite;
+}
+.blue {
+  background-color: var(--blue);
+  animation: lightnigBlue 2s infinite;
+}
+.orange {
+  background-color: var(--orange);
+  animation: lightnigOrange 2s infinite;
+}
+
+.light-blue {
+  background-color: var(--light-blue);
+  animation: lightnigLight-blue 2s infinite;
+}
+@keyframes lightnigRed {
+  0% {
+    box-shadow: 5px 10px 35px 10px var(--red);
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 10px 35px 10px var(--red);
+  }
+}
+@keyframes lightnigGreen {
+  0% {
+    box-shadow: 5px 10px 35px 10px var(--green);
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 10px 35px 10px var(--green);
+  }
+}
+@keyframes lightnigYellow {
+  0% {
+    box-shadow: 5px 10px 35px 10px var(--yellow);
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 10px 35px 10px var(--yellow);
+  }
+}
+@keyframes lightnigPink {
+  0% {
+    box-shadow: 5px 10px 35px 10px var(--pink);
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 10px 35px 10px var(--pink);
+  }
+}
+@keyframes lightnigBlue {
+  0% {
+    box-shadow: 5px 10px 35px 10px var(--blue);
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 10px 35px 10px var(--blue);
+  }
+}
+@keyframes lightnigOrange {
+  0% {
+    box-shadow: 5px 10px 35px 10px var(--orange);
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 10px 35px 10px var(--orange);
+  }
+}
+@keyframes lightnigLight-blue {
+  0% {
+    box-shadow: 5px 10px 35px 10px var(--light-blue);
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 10px 35px 10px var(--light-blue);
+  }
+}
+h1 {
+  margin-top: 20px;
+  font-family: "Cookie", cursive;
+  font-size: 80px;
+  text-align: center;
+  color: honeydew;
+  letter-spacing: 3px;
+}
